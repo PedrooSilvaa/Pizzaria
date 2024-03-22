@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Inicio Pizzaria</title>
+
+<style>
+    body {
+        background-color: #064c53;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #local-menu {
+        background-color: #e28a2e;
+        color: black;
+        height: 400px;
+        width: 400px;
+        border-radius: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        border: solid 20px #cd1c25;
+    }
+
+    #local-menu button{
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #cd1c25;
+        color: white;
+        border: solid white;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div id="local-menu">
+    <h1 id="title-initial">OLÁ ADICIONE UM NOVO SABOR ABAIXO:</h1>
+        <button onclick="window.location.href = '/Pizzaria/cadastro.html'">NOVO</button>
+        <button onclick="window.location.href = '/Pizzaria/lista'">Vizualizar lista</button>
+    </div>
+
+</body>
+</html>
