@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro</title>
+
+<style>
+
+    body {
+        background-color: #064c53;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #e28a2e;
+        border: #cd1c25 solid 5px;
+        color: black;
+        font-weight: 900;
+        font-size: 20px;
+        height: fit-content;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
+    }
+
+    label {
+        display: flex;
+        align-items: start;
+        width: 60%;
+    }
+
+    input {
+        margin-bottom: 30px;
+        width: 60%;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: #e28a2e;
+        color: black;
+    }
+
+    form button {
+        background-color: #cd1c25;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 60%;
+        cursor: pointer;
+        border: solid white;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #numeroDel {
+        display: none;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+<form action='/Pizzaria/servidorCliente'>
+	<label for='nome'>Nome:</label> 
+	<input type='text' name='nome' />
+	<label for='telefone'>Telefone:</label> 
+	<input type='text' name='telefone' />
+	<label for='rua'>Rua:</label> 
+	<input type='text' name='rua' />
+	<label for='nr'>NR:</label> 
+	<input type='number' name='nr'/>
+	<label for='bairro'>Bairro:</label> 
+	<input type='text' name='bairro' />
+    
+	<button type="submit">Gravar</button>
+     <button type="button" onclick="window.location.href = '/Pizzaria/lista'">Cancelar</button>
+</form>
+
+
+</body>
+</html>
