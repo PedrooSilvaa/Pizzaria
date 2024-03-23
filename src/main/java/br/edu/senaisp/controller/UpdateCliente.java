@@ -24,7 +24,7 @@ public class UpdateCliente extends HttpServlet {
 		
 		StringBuffer html = new StringBuffer();
 		html.append("<!DOCTYPE html>");
-		html.append("<html>");
+		html.append("<html lang=\"pt-br\">");
 		html.append("<head>");
 		html.append("<meta charset='UTF-8'>");
 		html.append("<title>Pagina Principal</title>");

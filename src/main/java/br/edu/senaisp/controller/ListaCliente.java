@@ -21,13 +21,20 @@ public class ListaCliente extends HttpServlet {
 		StringBuilder html = new StringBuilder();
 		html.append("");
 		html.append("<!DOCTYPE html>");
-		html.append("<html>");
+		html.append("<html lang=\"pt-br\">");
 		html.append("<head>");
 		html.append("<meta charset='ISO-8859-1'>");
 		html.append("<title>Pagina Principal</title>");
 		html.append("<style>");
 		html.append("body {");
 		html.append("    background-color: #064c53;");
+		html.append("}");
+		html.append("");
+		html.append("#local-botao {");
+		html.append("    justify-content: center;");
+		html.append("    gap: 10px;");
+		html.append("    display: flex;");
+		html.append("    align-items: center;");
 		html.append("}");
 		html.append("");
 		html.append(".grid {");
@@ -64,10 +71,13 @@ public class ListaCliente extends HttpServlet {
 		html.append("</style>");
 		html.append("</head>");
 		html.append("<body>");
-		html.append("<div class='grid'>");
+		html.append("<div id='local-botao'>");
 		html.append("<button onclick=\"window.location.href = '/Pizzaria/cadastro.html'\">NOVO</button>");
 		html.append("<button onclick=\"window.location.href = '/Pizzaria/cadastroCliente.html'\">NOVO CLIENTE</button>");
-		
+		html.append("<button onclick=\"window.location.href = '/Pizzaria/listaCliente'\">LISTA CLIENTE</button>");
+		html.append("<button onclick=\"window.location.href = '/Pizzaria/lista'\">LISTA PIZZAS</button>");
+		html.append("</div>");
+		html.append("<div class='grid'>");
 		ClienteDao dao = new ClienteDao();
 		for (Cliente cliente : dao.lista()) {
 			
