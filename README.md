@@ -1,7 +1,5 @@
 # Pizzaria API
 
-![Preview](https://via.placeholder.com/800x400.png?text=Preview+da+Pizzaria+API) <!-- Adicione uma imagem de preview se tiver -->
-
 Uma API de pizzaria desenvolvida em **Java puro**, sem o uso de frameworks como Spring Boot. Este projeto foi criado para consolidar os primeiros aprendizados em desenvolvimento de APIs, incluindo funcionalidades como cadastro de clientes e uma página inicial simples com **HTML** integrado ao projeto.
 
 ## 🚀 Tecnologias Utilizadas
